@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Become a CookLog early tester — GFN Solutions</title>
+<meta name="description" content="Join a small cohort of early CookLog testers across Kenya and India. Fill in the form and we'll be in touch.">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light}
+html,body{margin:0;background:#fff;font-family:Inter,sans-serif;color:#222}
+a{color:#333}
+a:hover{color:#11C97E}
+.navlink:hover{color:#11C97E!important;border-bottom:2px solid #11C97E!important}
+.cta:hover{background:#0fb571!important;color:#fff!important}
+.footlink:hover{color:#11C97E!important}
+label{display:block;font-size:14px;font-weight:600;color:#1a1a1a;margin:0 0 7px}
+.req{color:#11C97E}
+input[type=text],input[type=email],select,textarea{width:100%;box-sizing:border-box;font-family:Inter,sans-serif;font-size:15px;color:#222;background:#fff;border:1px solid #d3d8d3;border-radius:8px;padding:12px 14px;transition:border-color .15s}
+input[type=text]:focus,input[type=email]:focus,select:focus,textarea:focus{outline:none;border-color:#11C97E}
+textarea{resize:vertical;min-height:96px}
+.field{margin:0 0 22px}
+.hint{font-size:13px;color:#777;margin:6px 0 0}
+.checkgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px 16px}
+.checkrow{display:flex;align-items:center;gap:10px;font-size:15px;font-weight:400;color:#333;cursor:pointer}
+.checkrow input{width:18px;height:18px;accent-color:#11C97E;flex:0 0 auto}
+.hp{position:absolute;left:-9999px;top:auto;width:1px;height:1px;overflow:hidden}
+.err{color:#c0392b;font-size:13px;margin:6px 0 0;display:none}
+.field.invalid .err{display:block}
+.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:#c0392b}
+</style>
+</head>
+<body>
+<div style="font-size:16px;line-height:1.55">
+
+<header style="position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:10;border-bottom:1px solid #ececec">
+<div style="width:min(1100px,92%);margin:auto;padding:16px 0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 20px">
+<a href="../index.html" style="display:flex"><img src="../logo-gfn-header.png" alt="gfn" style="height:44px;width:auto;display:block"></a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px">
+<a href="../index.html#domains" style="text-decoration:none;color:#333;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:6px 0;border-bottom:2px solid transparent" class="navlink">Domains</a>
+<a href="../index.html#ventures" style="text-decoration:none;color:#333;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:6px 0;border-bottom:2px solid transparent" class="navlink">Ventures</a>
+<a href="../index.html#partners" style="text-decoration:none;color:#333;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:6px 0;border-bottom:2px solid transparent" class="navlink">Partners</a>
+<a href="index.html" style="text-decoration:none;color:#fff;background:#11C97E;font-size:14px;font-weight:600;padding:9px 20px;border-radius:999px" class="cta">Blog</a>
+</nav>
+</div>
+</header>
+
+<article style="width:min(720px,92%);margin:auto;padding:56px 0 72px">
+<a href="../index.html#blog" style="display:inline-block;text-decoration:none;font-size:14px;font-weight:600;color:#11C97E;margin:0 0 20px">← Back to blog</a>
+<h1 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-0.01em;margin:0 0 18px;color:#1a1a1a">Become a CookLog early tester</h1>
+<p style="font-size:17px;line-height:1.6;color:#444;margin:0 0 36px">We're selecting a small cohort of early testers across Kenya and India to try CookLog in real kitchens and shape where it goes next. If you'd like to take part, fill in the form below and we'll be in touch with next steps.</p>
+
+<form id="signup" novalidate style="border-top:1px solid #ececec;padding-top:36px">
+<div class="field" data-field="full_name">
+<label for="full_name">Full name <span class="req">*</span></label>
+<input type="text" id="full_name" name="full_name" autocomplete="name">
+<div class="err">Please enter your name.</div>
+</div>
+
+<div class="field" data-field="email">
+<label for="email">Email <span class="req">*</span></label>
+<input type="email" id="email" name="email" autocomplete="email">
+<div class="err">Please enter a valid email address.</div>
+</div>
+
+<div class="field" data-field="country">
+<label for="country">Country <span class="req">*</span></label>
+<select id="country" name="country">
+<option value="">Select…</option>
+<option value="Kenya">Kenya</option>
+<option value="India">India</option>
+</select>
+<div class="err">Please select your country.</div>
+</div>
+
+<div class="field" data-field="city">
+<label for="city">City / town <span class="req">*</span></label>
+<input type="text" id="city" name="city" autocomplete="address-level2">
+<div class="err">Please enter your city or town.</div>
+</div>
+
+<div class="field" data-field="fuels">
+<label>Fuels &amp; appliances you cook with <span class="req">*</span></label>
+<div class="checkgrid">
+<label class="checkrow"><input type="checkbox" name="fuels" value="LPG"> LPG</label>
+<label class="checkrow"><input type="checkbox" name="fuels" value="Charcoal"> Charcoal</label>
+<label class="checkrow"><input type="checkbox" name="fuels" value="Ethanol"> Ethanol</label>
+<label class="checkrow"><input type="checkbox" name="fuels" value="Electric / Induction"> Electric / Induction</label>
+<label class="checkrow"><input type="checkbox" name="fuels" value="Kerosene"> Kerosene</label>
+<label class="checkrow"><input type="checkbox" name="fuels" value="Firewood"> Firewood</label>
+<label class="checkrow"><input type="checkbox" name="fuels" value="Other"> Other</label>
+</div>
+<div class="err">Please select at least one.</div>
+</div>
+
+<div class="field" data-field="device">
+<label for="device">Device <span class="req">*</span></label>
+<select id="device" name="device">
+<option value="">Select…</option>
+<option value="Android phone">Android phone</option>
+<option value="Prefer web browser">Prefer web browser</option>
+</select>
+<div class="err">Please select an option.</div>
+</div>
+
+<div class="field" data-field="notes">
+<label for="notes">Anything else you'd like us to know <span style="font-weight:400;color:#999">(optional)</span></label>
+<textarea id="notes" name="notes"></textarea>
+</div>
+
+<div class="hp" aria-hidden="true">
+<label for="website">Website</label>
+<input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+</div>
+
+<div class="field" data-field="consent">
+<label class="checkrow" style="font-weight:500;align-items:flex-start"><input type="checkbox" id="consent" name="consent" style="margin-top:3px"> <span>I consent to be contacted about the CookLog testing programme. <span class="req">*</span></span></label>
+<div class="err">Please tick the box to continue.</div>
+</div>
+
+<button type="submit" id="submitBtn" class="cta" style="border:none;cursor:pointer;text-decoration:none;color:#fff;background:#11C97E;font-family:Inter,sans-serif;font-size:15px;font-weight:600;padding:14px 32px;border-radius:999px">Sign me up</button>
+
+<div id="formMsg" role="status" style="display:none;margin-top:22px;font-size:15px;line-height:1.5;padding:16px 18px;border-radius:8px"></div>
+</form>
+<div style="margin-top:44px;padding-top:28px;border-top:1px solid #ececec">
+<p style="font-size:16px;line-height:1.6;color:#444;margin:0">Prefer to reach us directly, or have a question? <a href="mailto:hello@gfn.solutions" style="color:#11C97E;font-weight:600">Write to us at hello@gfn.solutions</a>.</p>
+</div>
+</article>
+
+<footer id="contact" style="background:#1d201d">
+<div style="width:min(1100px,92%);margin:auto;padding:40px 0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 24px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<img src="../logo-gfn-footer.png" alt="gfn" style="height:40px;width:auto;display:block;align-self:flex-start;object-fit:contain">
+<div style="font-size:13px;color:rgba(255,255,255,0.55)">© 2026 GFN Solutions Ltd. All rights reserved.</div>
+</div>
+<a href="mailto:hello@gfn.solutions" style="text-decoration:none;font-size:14px;color:rgba(255,255,255,0.75)" class="footlink">hello@gfn.solutions</a>
+</div>
+</footer>
+</div>
+
+<script>
+(function(){
+  var ENDPOINT = "https://cooklog-api-215788967540.us-central1.run.app/public/tester-signups";
+  var form = document.getElementById('signup');
+  var btn = document.getElementById('submitBtn');
+  var msg = document.getElementById('formMsg');
+
+  function fieldEl(name){ return form.querySelector('[data-field="'+name+'"]'); }
+  function setInvalid(name, on){ var f = fieldEl(name); if(f) f.classList.toggle('invalid', !!on); }
+  function clearErrors(){ Array.prototype.forEach.call(form.querySelectorAll('.field.invalid'), function(f){ f.classList.remove('invalid'); }); }
+
+  function showMsg(text, kind){
+    msg.textContent = text;
+    msg.style.display = 'block';
+    if(kind === 'ok'){ msg.style.background = 'rgba(17,201,126,0.12)'; msg.style.color = '#0a7a4c'; }
+    else { msg.style.background = '#fdecea'; msg.style.color = '#c0392b'; }
+  }
+
+  form.addEventListener('submit', function(e){
+    e.preventDefault();
+    clearErrors();
+    msg.style.display = 'none';
+
+    var full_name = form.full_name.value.trim();
+    var email = form.email.value.trim();
+    var country = form.country.value;
+    var city = form.city.value.trim();
+    var fuels = Array.prototype.slice.call(form.querySelectorAll('input[name="fuels"]:checked')).map(function(c){ return c.value; });
+    var device = form.device.value;
+    var notes = form.notes.value.trim();
+    var consent = form.consent.checked;
+    var website = form.website.value;
+
+    var ok = true;
+    if(!full_name){ setInvalid('full_name', true); ok = false; }
+    if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ setInvalid('email', true); ok = false; }
+    if(country !== 'Kenya' && country !== 'India'){ setInvalid('country', true); ok = false; }
+    if(!city){ setInvalid('city', true); ok = false; }
+    if(fuels.length === 0){ setInvalid('fuels', true); ok = false; }
+    if(!device){ setInvalid('device', true); ok = false; }
+    if(!consent){ setInvalid('consent', true); ok = false; }
+
+    if(!ok){
+      showMsg('Please check the form — some required fields are missing or invalid.', 'err');
+      return;
+    }
+
+    var payload = {
+      full_name: full_name,
+      email: email,
+      country: country,
+      city: city,
+      fuels: fuels.join(', '),
+      device: device,
+      consent: true,
+      website: website
+    };
+    if(notes) payload.notes = notes;
+
+    btn.disabled = true;
+    var origText = btn.textContent;
+    btn.textContent = 'Sending…';
+    btn.style.opacity = '0.7';
+
+    fetch(ENDPOINT, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    }).then(function(res){
+      return res.json().catch(function(){ return {}; }).then(function(data){ return { status: res.status, data: data }; });
+    }).then(function(r){
+      if(r.status === 200 && r.data && r.data.ok){
+        form.reset();
+        showMsg("Thanks — you're on the list. We'll be in touch soon.", 'ok');
+        btn.style.display = 'none';
+      } else if(r.status === 409){
+        showMsg("It looks like you've already registered with this email — we'll be in touch.", 'ok');
+        btn.disabled = false; btn.textContent = origText; btn.style.opacity = '1';
+      } else if(r.status === 400){
+        showMsg('Please check the form — some required fields are missing or invalid.', 'err');
+        btn.disabled = false; btn.textContent = origText; btn.style.opacity = '1';
+      } else {
+        showMsg('Something went wrong. Please try again in a moment.', 'err');
+        btn.disabled = false; btn.textContent = origText; btn.style.opacity = '1';
+      }
+    }).catch(function(){
+      showMsg('Something went wrong. Please try again in a moment.', 'err');
+      btn.disabled = false; btn.textContent = origText; btn.style.opacity = '1';
+    });
+  });
+})();
+</script>
+</body>
+</html>

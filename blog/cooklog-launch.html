@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Introducing CookLog — GFN Solutions</title>
+<meta name="description" content="Introducing CookLog — the app we've built to understand how households really cook, and an invitation to help us test it.">
+<link rel="icon" type="image/png" href="../favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{color-scheme:light}
+html,body{margin:0;background:#fff;font-family:Inter,sans-serif;color:#222}
+a{color:#333}
+a:hover{color:#11C97E}
+.navlink:hover{color:#11C97E!important;border-bottom:2px solid #11C97E!important}
+.cta:hover{background:#0fb571!important;color:#fff!important}
+.footlink:hover{color:#11C97E!important}
+.post h2{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(24px,3.5vw,30px);line-height:1.2;letter-spacing:-0.01em;color:#1a1a1a;margin:44px 0 14px}
+.post h3{font-family:Inter,sans-serif;font-weight:600;font-size:19px;line-height:1.3;letter-spacing:-0.01em;color:#1a1a1a;margin:32px 0 10px}
+.post p{font-size:17px;line-height:1.65;color:#333;margin:0 0 18px}
+.post ul,.post ol{font-size:17px;line-height:1.65;color:#333;margin:0 0 18px;padding-left:22px}
+.post li{margin:0 0 8px}
+.post a{color:#11C97E;font-weight:500}
+</style>
+</head>
+<body>
+<div style="font-size:16px;line-height:1.55">
+
+<header style="position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:10;border-bottom:1px solid #ececec">
+<div style="width:min(1100px,92%);margin:auto;padding:16px 0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 20px">
+<a href="../index.html" style="display:flex"><img src="../logo-gfn-header.png" alt="gfn" style="height:44px;width:auto;display:block"></a>
+<nav style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px">
+<a href="../index.html#domains" style="text-decoration:none;color:#333;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:6px 0;border-bottom:2px solid transparent" class="navlink">Domains</a>
+<a href="../index.html#ventures" style="text-decoration:none;color:#333;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:6px 0;border-bottom:2px solid transparent" class="navlink">Ventures</a>
+<a href="../index.html#partners" style="text-decoration:none;color:#333;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:6px 0;border-bottom:2px solid transparent" class="navlink">Partners</a>
+<a href="index.html" style="text-decoration:none;color:#fff;background:#11C97E;font-size:14px;font-weight:600;padding:9px 20px;border-radius:999px" class="cta">Blog</a>
+</nav>
+</div>
+</header>
+
+<article class="post" style="width:min(720px,92%);margin:auto;padding:56px 0 72px">
+<a href="../index.html#blog" style="display:inline-block;text-decoration:none;font-size:14px;font-weight:600;color:#11C97E;margin:0 0 20px">← Back to blog</a>
+<div style="font-size:13px;font-weight:600;letter-spacing:0.02em;color:#11C97E;margin:0 0 12px">CookLog · 20 July 2026</div>
+<h1 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-0.01em;margin:0 0 10px;color:#1a1a1a">Introducing CookLog — and an invitation to help us test it</h1>
+<p style="font-size:15px;color:#888;font-style:italic;margin:0 0 30px">By GFN Solutions</p>
+
+<p>Today we're introducing <strong>CookLog</strong>, a lightweight, offline-first app for logging household cooking energy use — and inviting a small group of early testers in Kenya and India to help us put it through its paces.</p>
+
+<div style="display:flex;flex-wrap:wrap;gap:28px;justify-content:center;align-items:flex-start;margin:36px 0 8px">
+<figure style="margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;flex:0 0 auto">
+<div style="width:250px;background:#0e0f0e;border-radius:34px;padding:9px;box-shadow:0 14px 34px rgba(0,0,0,0.22)">
+<img src="img/cooklog-newcook.jpg" alt="CookLog — logging a new LPG cook" style="display:block;width:100%;border-radius:26px">
+</div>
+</figure>
+<figure style="margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;flex:0 0 auto">
+<div style="width:250px;background:#0e0f0e;border-radius:34px;padding:9px;box-shadow:0 14px 34px rgba(0,0,0,0.22)">
+<img src="img/cooklog-summaries.jpg" alt="CookLog — cooking energy summaries" style="display:block;width:100%;border-radius:26px">
+</div>
+</figure>
+</div>
+
+<h2>Why we built CookLog</h2>
+<p>If you work in clean cooking, you know the measurement problem. Understanding how households actually cook — which fuels they use, how often, what they spend, and how they combine fuels across a week — is foundational to everything from pilot design to consumer finance. Yet the standard tools for capturing this are heavy: paper diaries, enumerator visits, and long surveys that ask a lot of participants while still leaving gaps.</p>
+<p>The <a href="https://mecs.org.uk" target="_blank" rel="noopener">Modern Energy Cooking Services (MECS) programme</a> has done influential work here through its <strong><a href="https://mecs.org.uk/publications/cooking-diaries-3-0-protocols/" target="_blank" rel="noopener">Cooking Diaries</a></strong> methodology, in which households record their cooking events, fuels, and appliances over several weeks. It's a rich method, and successive iterations of it point clearly in one direction: reduce the burden on participants, digitise data capture, and make the instrument light enough that people can keep it up over time on their own.</p>
+<p>CookLog is our attempt to build exactly that — a <strong>digital, diary-light instrument</strong> in the spirit of the <a href="https://mecs.org.uk/publications/cooking-diaries-3-0-protocols/" target="_blank" rel="noopener">MECS cooking diaries</a> agenda. It's designed for real-world conditions: intermittent connectivity, shared phones, and entry-level Android devices.</p>
+
+<h2>What CookLog does</h2>
+<p>At its core, CookLog lets a household record two simple things:</p>
+<ul>
+<li><strong>Cooking events</strong> — what was cooked, on which appliance, with which fuel</li>
+<li><strong>Fuel purchases and refills</strong> — when fuel was bought, how much, and at what cost</li>
+</ul>
+<p>From those two streams, the app does the analytical heavy lifting — and the most direct benefit lands with the household itself.</p>
+
+<h3>See what your cooking actually costs</h3>
+<p>Most of us have only a rough sense of what we spend on cooking fuel. A cylinder here, a charcoal purchase there, an electricity bill that mixes cooking with everything else. CookLog turns your own logs into a clear picture: <strong>your weekly and monthly cooking spend, broken down by fuel</strong>, built from your actual purchases rather than guesswork.</p>
+<p>It does this through refill-cycle cost modelling — reconstructing what each fuel truly costs you from one refill to the next. Over a few weeks of logging, you get an honest answer to a question most households can only estimate: <em>what does it cost us to cook?</em> That makes it far easier to compare fuels, spot expensive habits, and decide whether a switch — say, adding an induction cooker or moving from charcoal to LPG — would actually save you money.</p>
+
+<h3>Capture how you really cook</h3>
+<p>Most households use two or three fuels side by side. CookLog records each cooking method and appliance separately, so your real cooking pattern shows up in your data — including how you mix fuels across the week.</p>
+
+<h2>Design decisions we made along the way</h2>
+<ul>
+<li><strong>Offline-first.</strong> Everything works without a connection; data syncs when the network allows.</li>
+<li><strong>Low-friction sign-in.</strong> Sign in with your phone number, with an optional PIN for account recovery.</li>
+<li><strong>Consent built in.</strong> Research consent is captured clearly and explicitly during onboarding.</li>
+<li><strong>Web and Android at parity.</strong> The same app runs in the browser and as a native Android app, so you can use whichever suits you.</li>
+</ul>
+
+<h2>We're inviting a small group of testers</h2>
+<p>We're opening CookLog to a <strong>select group of early testers</strong> across Kenya and India. This is a deliberately small, hands-on phase — we want people who will log their cooking honestly for a few weeks and tell us where the app falls short. Invited testers will receive the app directly from us, along with simple setup instructions.</p>
+<p><strong>Taking part is straightforward:</strong> log your cooking and fuel purchases as they happen for at least two weeks, then share what you find — bugs, confusing screens, features you wish existed.</p>
+<p><strong>In return, you'll be among the first to see your own cooking economics laid out clearly</strong> — your weekly and monthly spend by fuel, drawn from your real purchases — and you'll shape a tool built for households and researchers across our region. Early testers will also have first access to everything we release next.</p>
+<p>If you'd like to take part, <a href="become-a-tester.html">get in touch and become a CookLog early tester</a> — tell us a little about your cooking setup, the fuels and appliances you use, and where you're based. We'll be selecting a small initial cohort across Kenya and India.</p>
+
+<h2>What's next</h2>
+<p>This is the start of a longer journey. On our roadmap: richer summaries for households, better tools for pilot administrators, and tighter alignment with established research protocols. For now, the goal is simple: make it genuinely easy for a household to record how they cook — and give them a clear view of what it costs.</p>
+<div style="margin-top:44px;padding-top:28px;border-top:1px solid #ececec">
+<p style="font-size:16px;line-height:1.6;color:#444;margin:0">Have thoughts or questions about this post? <a href="mailto:hello@gfn.solutions" style="color:#11C97E;font-weight:600">Write to us at hello@gfn.solutions</a>.</p>
+</div>
+</article>
+
+<footer id="contact" style="background:#1d201d">
+<div style="width:min(1100px,92%);margin:auto;padding:40px 0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px 24px">
+<div style="display:flex;flex-direction:column;gap:6px">
+<img src="../logo-gfn-footer.png" alt="gfn" style="height:40px;width:auto;display:block;align-self:flex-start;object-fit:contain">
+<div style="font-size:13px;color:rgba(255,255,255,0.55)">© 2026 GFN Solutions Ltd. All rights reserved.</div>
+</div>
+<a href="mailto:hello@gfn.solutions" style="text-decoration:none;font-size:14px;color:rgba(255,255,255,0.75)" class="footlink">hello@gfn.solutions</a>
+</div>
+</footer>
+</div>
+</body>
+</html>

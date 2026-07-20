@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>GFN Solutions — Building for dignity</title>
 <meta name="description" content="GFN Solutions builds ventures for dignified home life and livelihoods across Africa and the Indian subcontinent — affordable induction and ethanol cooking, and last-mile mobility.">
-<link rel="icon" type="image/png" href="logo-gfn.png">
+<link rel="icon" type="image/png" href="favicon.png">
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-878J0K435E"></script>
 <script>
@@ -25,6 +25,11 @@ a:hover{color:#11C97E}
 .navlink:hover{color:#11C97E!important;border-bottom:2px solid #11C97E!important}
 .cta:hover{background:#0fb571!important;color:#fff!important}
 .footlink:hover{color:#11C97E!important}
+@media (max-width:720px){
+.hero{aspect-ratio:auto!important;min-height:0!important;background:#eef1ee!important;padding:0 0 24px!important}
+.hero-img{display:block!important}
+.hero-text{max-width:100%!important;padding:16px!important;margin-top:-64px}
+}
 </style>
 </head>
 <body>
@@ -32,7 +37,7 @@ a:hover{color:#11C97E}
 
 <header style="position:sticky;top:0;background:rgba(255,255,255,0.95);backdrop-filter:blur(8px);z-index:10;border-bottom:1px solid #ececec">
 <div style="width:min(1100px,92%);margin:auto;padding:16px 0;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px 20px">
-<img src="logo-gfn.png" alt="gfn" style="height:44px;width:auto;display:block">
+<img src="logo-gfn-header.png" alt="gfn" style="height:44px;width:auto;display:block">
 <nav style="display:flex;flex-wrap:wrap;align-items:center;gap:10px 26px">
 <a href="#" style="text-decoration:none;color:#333;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:6px 0;border-bottom:2px solid transparent" class="navlink">Domains</a>
 <a href="#ventures" style="text-decoration:none;color:#333;font-size:14px;font-weight:500;letter-spacing:0.02em;padding:6px 0;border-bottom:2px solid transparent" class="navlink">Ventures</a>
@@ -43,8 +48,9 @@ a:hover{color:#11C97E}
 </header>
 
 <section data-screen-label="Banner" style="width:100%">
-<div style="position:relative;aspect-ratio:1920/700;min-height:clamp(320px,36vw,700px);max-width:1920px;margin:auto;background:url('banner-grey.png') center/cover no-repeat #fff;box-sizing:border-box">
-<div style="position:absolute;top:0;bottom:0;left:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(16px,4vw,56px) max(16px,calc(50% - 550px));max-width:min(640px,80%)">
+<div class="hero" style="aspect-ratio:1920/700;min-height:clamp(320px,36vw,700px);max-width:1920px;margin:auto;background:url('banner-grey.png') center/cover no-repeat #fff;box-sizing:border-box;display:flex;flex-direction:column;justify-content:center;padding:clamp(24px,4vw,56px) max(16px,calc(50% - 550px))">
+<img src="banner-grey.png" alt="" class="hero-img" style="display:none;width:100%;height:auto">
+<div class="hero-text" style="display:flex;flex-direction:column;align-items:flex-start;max-width:640px;box-sizing:border-box">
 <div style="background:rgba(40,44,42,0.72);padding:clamp(16px,2.5vw,28px) clamp(18px,3vw,32px)">
 <h1 style="font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(30px,4.5vw,54px);margin:0 0 12px;line-height:1.08;letter-spacing:-0.01em;color:#fff">Building for dignity</h1>
 <p style="margin:0;font-size:clamp(14px,1.4vw,17px);line-height:1.55;color:#fff">Despite progress, there remains a gap in providing a dignified home life and livelihood, in Africa and the Indian subcontinent. GFN Solutions is building ventures to solve this gap.</p>

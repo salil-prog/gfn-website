@@ -66,6 +66,16 @@ textarea{resize:vertical;min-height:96px}
 <div class="err">Please enter a valid email address.</div>
 </div>
 
+<div class="field" data-field="phone">
+<label for="phone">Phone number (WhatsApp / M-Pesa number) <span class="req">*</span></label>
+<div style="display:flex;gap:8px">
+<span id="dial" style="flex:0 0 auto;display:flex;align-items:center;padding:0 14px;border:1px solid #d3d8d3;border-radius:8px;background:#f7f9f7;font-size:15px;color:#555">+254</span>
+<input type="text" id="phone" name="phone" inputmode="tel" autocomplete="tel-national" placeholder="7XX XXX XXX" style="flex:1">
+</div>
+<div class="hint">The number you'll use to sign in to the app.</div>
+<div class="err">Please enter a valid phone number.</div>
+</div>
+
 <div class="field" data-field="country">
 <label for="country">Country <span class="req">*</span></label>
 <select id="country" name="country">
@@ -148,6 +158,12 @@ textarea{resize:vertical;min-height:96px}
   var btn = document.getElementById('submitBtn');
   var msg = document.getElementById('formMsg');
 
+
+  var countrySel = document.getElementById('country');
+  var dialEl = document.getElementById('dial');
+  var DIAL = { Kenya: '+254', India: '+91' };
+  countrySel.addEventListener('change', function(){ dialEl.textContent = DIAL[countrySel.value] || '+254'; });
+
   function fieldEl(name){ return form.querySelector('[data-field="'+name+'"]'); }
   function setInvalid(name, on){ var f = fieldEl(name); if(f) f.classList.toggle('invalid', !!on); }
   function clearErrors(){ Array.prototype.forEach.call(form.querySelectorAll('.field.invalid'), function(f){ f.classList.remove('invalid'); }); }
@@ -167,6 +183,9 @@ textarea{resize:vertical;min-height:96px}
     var full_name = form.full_name.value.trim();
     var email = form.email.value.trim();
     var country = form.country.value;
+    var dial = (DIAL[country] || '+254');
+    var phoneLocal = form.phone.value.replace(/\D/g, '').replace(/^0+/, '');
+    var phone = dial + phoneLocal;
     var city = form.city.value.trim();
     var fuels = Array.prototype.slice.call(form.querySelectorAll('input[name="fuels"]:checked')).map(function(c){ return c.value; });
     var device = form.device.value;
@@ -178,6 +197,7 @@ textarea{resize:vertical;min-height:96px}
     if(!full_name){ setInvalid('full_name', true); ok = false; }
     if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){ setInvalid('email', true); ok = false; }
     if(country !== 'Kenya' && country !== 'India'){ setInvalid('country', true); ok = false; }
+    if(phoneLocal.length < 7 || phoneLocal.length > 12){ setInvalid('phone', true); ok = false; }
     if(!city){ setInvalid('city', true); ok = false; }
     if(fuels.length === 0){ setInvalid('fuels', true); ok = false; }
     if(!device){ setInvalid('device', true); ok = false; }
@@ -190,6 +210,7 @@ textarea{resize:vertical;min-height:96px}
 
     var payload = {
       full_name: full_name,
+      phone: phone,
       email: email,
       country: country,
       city: city,
@@ -217,7 +238,7 @@ textarea{resize:vertical;min-height:96px}
         showMsg("Thanks — you're on the list. We'll be in touch soon.", 'ok');
         btn.style.display = 'none';
       } else if(r.status === 409){
-        showMsg("It looks like you've already registered with this email — we'll be in touch.", 'ok');
+        showMsg("It looks like this phone number is already registered — we'll be in touch.", 'ok');
         btn.disabled = false; btn.textContent = origText; btn.style.opacity = '1';
       } else if(r.status === 400){
         showMsg('Please check the form — some required fields are missing or invalid.', 'err');

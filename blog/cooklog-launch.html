@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Introducing CookLog — GFN Solutions</title>
-<meta name="description" content="Introducing CookLog — the app we've built to understand how households really cook, and an invitation to help us test it.">
+<title>CookLog: a simple tool for modelling household cooking expenses — GFN Solutions</title>
+<meta name="description" content="A lightweight, offline-first app for logging household cooking events and fuel purchases, and seeing what cooking actually costs. Available in Kenya and India.">
 <link rel="icon" type="image/png" href="../favicon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -42,11 +42,15 @@ a:hover{color:#11C97E}
 
 <article class="post" style="width:min(720px,92%);margin:auto;padding:56px 0 72px">
 <a href="../index.html#blog" style="display:inline-block;text-decoration:none;font-size:14px;font-weight:600;color:#11C97E;margin:0 0 20px">← Back to blog</a>
-<div style="font-size:13px;font-weight:600;letter-spacing:0.02em;color:#11C97E;margin:0 0 12px">CookLog · 20 July 2026</div>
-<h1 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-0.01em;margin:0 0 10px;color:#1a1a1a">Introducing CookLog — and an invitation to help us test it</h1>
+<div style="font-size:13px;font-weight:600;letter-spacing:0.02em;color:#11C97E;margin:0 0 12px">CookLog · 29 July 2026</div>
+<h1 style="font-family:'Cormorant Garamond',serif;font-weight:600;font-size:clamp(32px,5vw,46px);line-height:1.1;letter-spacing:-0.01em;margin:0 0 10px;color:#1a1a1a">CookLog — a simple tool for modelling household cooking expenses</h1>
 <p style="font-size:15px;color:#888;font-style:italic;margin:0 0 30px">By GFN Solutions</p>
 
-<p>Today we're introducing <strong>CookLog</strong>, a lightweight, offline-first app for logging household cooking energy use — and inviting a small group of early testers in Kenya and India to help us put it through its paces.</p>
+<p>CookLog is our attempt at trying to understand the choices being made in households around the cooking stack. In return we are aiming to deliver a simple view of monthly cooking expenses, that can help make better choices.</p>
+
+<p>Available for users in Kenya and India, the app is lightweight and offline-first, aimed at clean cooking researchers and business teams who are looking for a tool to support their pilot studies. It can be used for the <a href="https://mecs.org.uk/publications/cooking-diaries-3-0-protocols/" target="_blank" rel="noopener">MECS Cooking Diaries protocol</a> and also addresses some of the gaps in the same.</p>
+
+<p>CookLog helps you log cooking events and fuel purchases, helping develop a clear picture of household energy usage and spend. It includes support for LPG, ethanol and induction cooking. The most mature output is for induction cooking, where a power meter or the kWh usage is available on device.</p>
 
 <div style="display:flex;flex-wrap:wrap;gap:28px;justify-content:center;align-items:flex-start;margin:36px 0 8px">
 <figure style="margin:0;display:flex;flex-direction:column;align-items:center;gap:12px;flex:0 0 auto">
@@ -61,42 +65,13 @@ a:hover{color:#11C97E}
 </figure>
 </div>
 
-<h2>Why we built CookLog</h2>
-<p>If you work in clean cooking, you know the measurement problem. Understanding how households actually cook — which fuels they use, how often, what they spend, and how they combine fuels across a week — is foundational to everything from pilot design to consumer finance. Yet the standard tools for capturing this are heavy: paper diaries, enumerator visits, and long surveys that ask a lot of participants while still leaving gaps.</p>
-<p>The <a href="https://mecs.org.uk" target="_blank" rel="noopener">Modern Energy Cooking Services (MECS) programme</a> has done influential work here through its <strong><a href="https://mecs.org.uk/publications/cooking-diaries-3-0-protocols/" target="_blank" rel="noopener">Cooking Diaries</a></strong> methodology, in which households record their cooking events, fuels, and appliances over several weeks. It's a rich method, and successive iterations of it point clearly in one direction: reduce the burden on participants, digitise data capture, and make the instrument light enough that people can keep it up over time on their own.</p>
-<p>CookLog is our attempt to build exactly that — a <strong>digital, diary-light instrument</strong> in the spirit of the <a href="https://mecs.org.uk/publications/cooking-diaries-3-0-protocols/" target="_blank" rel="noopener">MECS cooking diaries</a> agenda. It's designed for real-world conditions: intermittent connectivity, shared phones, and entry-level Android devices.</p>
+<p>The app can be used by anyone who is interested in getting a handle on their monthly cooking fuel expenses, but be warned! It requires diligent logging for a useful and accurate output to be obtained.</p>
 
-<h2>What CookLog does</h2>
-<p>At its core, CookLog lets a household record two simple things:</p>
-<ul>
-<li><strong>Cooking events</strong> — what was cooked, on which appliance, with which fuel</li>
-<li><strong>Fuel purchases and refills</strong> — when fuel was bought, how much, and at what cost</li>
-</ul>
-<p>From those two streams, the app does the analytical heavy lifting — and the most direct benefit lands with the household itself.</p>
+<p>The longer term goal is to use the data to develop a household energy model that can be used by clean cooking companies, researchers, climate finance teams, policy makers to develop better hardware, GTM plans, pilot studies, financing mechanisms and regulations.</p>
 
-<h3>See what your cooking actually costs</h3>
-<p>Most of us have only a rough sense of what we spend on cooking fuel. A cylinder here, a charcoal purchase there, an electricity bill that mixes cooking with everything else. CookLog turns your own logs into a clear picture: <strong>your weekly and monthly cooking spend, broken down by fuel</strong>, built from your actual purchases rather than guesswork.</p>
-<p>It does this through refill-cycle cost modelling — reconstructing what each fuel truly costs you from one refill to the next. Over a few weeks of logging, you get an honest answer to a question most households can only estimate: <em>what does it cost us to cook?</em> That makes it far easier to compare fuels, spot expensive habits, and decide whether a switch — say, adding an induction cooker or moving from charcoal to LPG — would actually save you money.</p>
+<p>The app works on Android as well as in your browser.</p>
 
-<h3>Capture how you really cook</h3>
-<p>Most households use two or three fuels side by side. CookLog records each cooking method and appliance separately, so your real cooking pattern shows up in your data — including how you mix fuels across the week.</p>
-
-<h2>Design decisions we made along the way</h2>
-<ul>
-<li><strong>Offline-first.</strong> Everything works without a connection; data syncs when the network allows.</li>
-<li><strong>Low-friction sign-in.</strong> Sign in with your phone number, with an optional PIN for account recovery.</li>
-<li><strong>Consent built in.</strong> Research consent is captured clearly and explicitly during onboarding.</li>
-<li><strong>Web and Android at parity.</strong> The same app runs in the browser and as a native Android app, so you can use whichever suits you.</li>
-</ul>
-
-<h2>We're inviting a small group of testers</h2>
-<p>We're opening CookLog to a <strong>select group of early testers</strong> across Kenya and India. This is a deliberately small, hands-on phase — we want people who will log their cooking honestly for a few weeks and tell us where the app falls short. Invited testers will receive the app directly from us, along with simple setup instructions.</p>
-<p><strong>Taking part is straightforward:</strong> log your cooking and fuel purchases as they happen for at least two weeks, then share what you find — bugs, confusing screens, features you wish existed.</p>
-<p><strong>In return, you'll be among the first to see your own cooking economics laid out clearly</strong> — your weekly and monthly spend by fuel, drawn from your real purchases — and you'll shape a tool built for households and researchers across our region. Early testers will also have first access to everything we release next.</p>
-<p>If you'd like to take part, <a href="become-a-tester.html">get in touch and become a CookLog early tester</a> — tell us a little about your cooking setup, the fuels and appliances you use, and where you're based. We'll be selecting a small initial cohort across Kenya and India.</p>
-
-<h2>What's next</h2>
-<p>This is the start of a longer journey. On our roadmap: richer summaries for households, better tools for pilot administrators, and tighter alignment with established research protocols. For now, the goal is simple: make it genuinely easy for a household to record how they cook — and give them a clear view of what it costs.</p>
+<p>We are inviting interested folks to give the app a spin before we launch it on the Play Store, your feedback is welcome :) You can <a href="become-a-tester.html">sign up to be an early tester here</a>.</p>
 <div style="margin-top:44px;padding-top:28px;border-top:1px solid #ececec">
 <p style="font-size:16px;line-height:1.6;color:#444;margin:0">Have thoughts or questions about this post? <a href="mailto:hello@gfn.solutions" style="color:#11C97E;font-weight:600">Write to us at hello@gfn.solutions</a>.</p>
 </div>
